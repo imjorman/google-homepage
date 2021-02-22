@@ -1,19 +1,68 @@
 <!DOCTYPE html>
+<style>
 
+#navBar{
+    position: relative;
+    top: 0;
+    left:0;
+}
+
+#footNavBar{
+
+
+}
+
+li{
+    list-style: none;
+    float: left;
+    padding: 8px;
+}
+
+
+#mainComponents{
+
+    align-self: center;
+}
+
+</style>
+
+<header>
 <nav id="navBar">
-    <ul id="navItems">
-        <li class="navLeft">About</li>
-        <li class="navLeft">Store</li>
-        <li class="navRight">Gmail</li>
-        <li class="navRight">Images</li>
-        <li class="navRight"><img></image></li>
-        <li class="navRight" id="signInButton">Sign in</li>
+    <ul>
+        <li>About</li>
+        <li>Store</li>
+        <li style="float:right">Gmail</li>
+        <li style="float:right">Images</li>
+        <li style="float:right"><img></image></li>
+        <li style="float:right" id="signInButton">Sign in</li>
     </ul>
 </nav>
+</header>
+
+<body>
+<div id="mainComponents">
+    <img id="googleLogo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"></img>
+
+    <input type="text" id="searchBar" placeholder=""></input>
+
+</div>
 
 
+</body>
 
+<footer>
+<nav id="footNavBar">
+    <ul>
+        <li>Advertising</li>
+        <li>Business</li>
+        <li>How Search Works</li>
+        <li style="float:right">Privacy</li>
+        <li style="float:right">Terms</li>
+        <li style="float:right">Settings</li>
+    </ul>
+    </nav>
+</nav>
 
-
+</footer>
 
 </html>
