@@ -18,23 +18,59 @@ body{
 }
 
 #topBar{
-
+position: fixed;
+top: 0;
+width: 100%;
+text-align: center;
+display: grid;
+align-content: center;
+left: 0;
     
 }
 
 #footBar{
 
-    bottom: 10px;
-
+    border: 1px solid rgb(236, 234, 234);
     background-color: rgb(236, 234, 234);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    height: 45px;
+    left: 0;
+
+
+}
+
+ul{
+    list-style: none;
+    padding: 6px;
+    text-align: center;
 
 }
 
 li{
-    list-style: none;
     float: left;
-    padding: 6px;
+    padding: 12px;
+    text-align: center;
+    display: block;
+}
 
+#signInButton{
+    color: white;
+    background-color: #4285f4;
+    border: 1px solid #4285f4;
+    float:right; 
+    text-align: center;
+
+
+}
+
+#bottomList{
+    padding-top: 0;
+    background-color: rgb(236, 234, 234);
 }
 
 #mainComponents{
@@ -42,6 +78,7 @@ li{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 150px;
 }
 
 #googleLogo{
@@ -51,8 +88,12 @@ li{
 
 #searchBar{
     height: 34px;
+    min-width: 550px;
     max-width: 2048px;
-    border-radius: 4px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border: 0.5px rgb(231, 228, 228) solid;
     background-color: transparent;
 }
@@ -81,14 +122,15 @@ button {
 </style>
 
 <header>
-<nav>
-    <ul id="topBar">
+<nav id="topBar">
+    <ul >
         <li>About</li>
         <li>Store</li>
-        <li style="float:right">Gmail</li>
+        <li id="signInButton"><b>Sign In</b></li>
         <li style="float:right">Images</li>
-        <li style="float:right"><img></image></li>
-        <li style="float:right" id="signInButton">Sign in</li>
+        <li style="float:right">Gmail</li>
+        
+        
     </ul>
 </nav>
 </header>
@@ -114,12 +156,12 @@ button {
 
 <footer>
 
-<nav>
-    <ul id="footBar">
+<nav id="footBar">
+    <ul id="bottomList">
         <li>Advertising</li>
         <li>Business</li>
         <li>How Search Works</li>
-        <li style="float:right">Settings</li>
+        <li style="float:right; padding-right: 15px;">Settings</li>
         <li style="float:right">Terms</li>
         <li style="float:right">Privacy</li> 
     </ul>
