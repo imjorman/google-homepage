@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <style>
 
-#navBar{
-    position: relative;
-    top: 0;
-    left:0;
+header{
+    font-size: 14px;
+    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
 }
 
-#footNavBar{
+#topBar{
+top: 0;
+margin: 0;
+    
+}
 
+#footBar{
+    bottom:0; 
+    margin: 0;
+    background-color: rgb(236, 234, 234);
 
 }
 
@@ -16,19 +23,36 @@ li{
     list-style: none;
     float: left;
     padding: 8px;
+
 }
 
+body{
+    font-size: 14px;
+    font-family: Roboto, HelveticaNeue, Arial, sans-serif;
+}
 
 #mainComponents{
 
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#googleLogo{
+    width: 272px;
+    height: 92px;
+}
+
+#searchBar{
+    height: 34px;
+    max-width: 2048px;
 }
 
 </style>
 
 <header>
-<nav id="navBar">
-    <ul>
+<nav>
+    <ul id="topBar">
         <li>About</li>
         <li>Store</li>
         <li style="float:right">Gmail</li>
@@ -51,14 +75,15 @@ li{
 </body>
 
 <footer>
-<nav id="footNavBar">
-    <ul>
+
+<nav>
+    <ul id="footBar">
         <li>Advertising</li>
         <li>Business</li>
         <li>How Search Works</li>
-        <li style="float:right">Privacy</li>
-        <li style="float:right">Terms</li>
         <li style="float:right">Settings</li>
+        <li style="float:right">Terms</li>
+        <li style="float:right">Privacy</li> 
     </ul>
     </nav>
 </nav>
